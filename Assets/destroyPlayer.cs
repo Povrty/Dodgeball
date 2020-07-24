@@ -22,7 +22,6 @@ public class destroyPlayer : MonoBehaviour
         }  
         else if (player.gameObject.tag == "Player2")
         {
-            themeSong.Stop();
             SceneManager.LoadScene("Game 2");
 		}
     }

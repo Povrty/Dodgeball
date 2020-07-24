@@ -68,31 +68,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 610}
     - Class: 114
-      Script: {instanceID: 11196}
+      Script: {instanceID: 11194}
     - Class: 114
-      Script: {instanceID: 11246}
+      Script: {instanceID: 11244}
     - Class: 114
-      Script: {instanceID: 11434}
+      Script: {instanceID: 11432}
     - Class: 114
-      Script: {instanceID: 11488}
+      Script: {instanceID: 11486}
     - Class: 114
-      Script: {instanceID: 11544}
+      Script: {instanceID: 11542}
     - Class: 114
-      Script: {instanceID: 11668}
+      Script: {instanceID: 11666}
     - Class: 114
-      Script: {instanceID: 11794}
+      Script: {instanceID: 11792}
     - Class: 114
-      Script: {instanceID: 11870}
+      Script: {instanceID: 11868}
     - Class: 114
-      Script: {instanceID: 12212}
+      Script: {instanceID: 12210}
     - Class: 114
-      Script: {instanceID: 12910}
+      Script: {instanceID: 12908}
     - Class: 114
-      Script: {instanceID: 13506}
+      Script: {instanceID: 13504}
     - Class: 114
-      Script: {instanceID: 13674}
+      Script: {instanceID: 13672}
     - Class: 114
-      Script: {instanceID: 14288}
+      Script: {instanceID: 14286}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -147,31 +147,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 610}
     - Class: 114
-      Script: {instanceID: 11196}
+      Script: {instanceID: 11194}
     - Class: 114
-      Script: {instanceID: 11434}
+      Script: {instanceID: 11432}
     - Class: 114
-      Script: {instanceID: 11488}
+      Script: {instanceID: 11486}
     - Class: 114
-      Script: {instanceID: 11544}
+      Script: {instanceID: 11542}
     - Class: 114
-      Script: {instanceID: 11668}
+      Script: {instanceID: 11666}
     - Class: 114
-      Script: {instanceID: 11794}
+      Script: {instanceID: 11792}
     - Class: 114
-      Script: {instanceID: 11870}
+      Script: {instanceID: 11868}
     - Class: 114
-      Script: {instanceID: 12212}
+      Script: {instanceID: 12210}
     - Class: 114
-      Script: {instanceID: 12910}
+      Script: {instanceID: 12908}
     - Class: 114
-      Script: {instanceID: 13474}
+      Script: {instanceID: 13472}
     - Class: 114
-      Script: {instanceID: 13506}
+      Script: {instanceID: 13504}
     - Class: 114
-      Script: {instanceID: 13674}
+      Script: {instanceID: 13672}
     - Class: 114
-      Script: {instanceID: 14288}
+      Script: {instanceID: 14286}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -218,23 +218,23 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11196}
+      Script: {instanceID: 11194}
     - Class: 114
-      Script: {instanceID: 11488}
+      Script: {instanceID: 11486}
     - Class: 114
-      Script: {instanceID: 11530}
+      Script: {instanceID: 11528}
     - Class: 114
-      Script: {instanceID: 11544}
+      Script: {instanceID: 11542}
     - Class: 114
-      Script: {instanceID: 12212}
+      Script: {instanceID: 12210}
     - Class: 114
-      Script: {instanceID: 12910}
+      Script: {instanceID: 12908}
     - Class: 114
-      Script: {instanceID: 13674}
+      Script: {instanceID: 13672}
     - Class: 114
-      Script: {instanceID: 13884}
+      Script: {instanceID: 13882}
     - Class: 114
-      Script: {instanceID: 14288}
+      Script: {instanceID: 14286}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -805,4 +805,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/playScreen.unity
   - Assets/Scenes/Game 1.unity
   - Assets/Scenes/Game 2.unity
-  playerPath: C:/Users/Povrty/Downloads
+  playerPath: C:/Users/Povrty/Desktop/Github/Dodgeball/Game/Build
