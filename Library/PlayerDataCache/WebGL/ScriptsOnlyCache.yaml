@@ -805,4 +805,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/playScreen.unity
   - Assets/Scenes/Game 1.unity
   - Assets/Scenes/Game 2.unity
-  playerPath: C:/Users/Povrty/Desktop/Github/Dodgeball/Game/Build
+  playerPath: C:/Users/Povrty/Desktop/Github/Dodgeball/Game
