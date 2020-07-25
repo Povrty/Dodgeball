@@ -70,14 +70,17 @@ public class finalScore : MonoBehaviour
         if (chooseGameMode == "easy")
         {
             PlayerPrefs.DeleteKey("ScoreTextEasy");
+            highScore.text = "0";
         }
         else if (chooseGameMode == "medium")
         {
             PlayerPrefs.DeleteKey("ScoreTextMedium");
+            highScore.text = "0";
         }
         else if (chooseGameMode == "hard")
         {
             PlayerPrefs.DeleteKey("ScoreTextHard");
+            highScore.text = "0";
         }
 	}
 }
