@@ -6,9 +6,9 @@ public class Movement : MonoBehaviour
 {
     public float speed;
     public float jumpVelocity;
-    private Rigidbody2D rigidbody2D;
+    private new Rigidbody2D rigidbody2D;
     private BoxCollider2D boxCollider2D;
-    [SerializeField] private LayerMask platformsLayerMask;
+    [SerializeField] public LayerMask platformsLayerMask;
 
     void Awake()
     {

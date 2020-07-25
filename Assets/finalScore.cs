@@ -10,10 +10,12 @@ public class finalScore : MonoBehaviour
     public static string chooseGameMode;
     public GameObject Player;
     public GameObject newScore;
+    public bool ranOnce;
 
     void Start()
     {
         chooseGameMode = dropDown.gameMode;
+        ranOnce = false;
         if (chooseGameMode == "easy")
         {
             highScore.text = PlayerPrefs.GetFloat("ScoreTextEasy", 0).ToString();
@@ -30,7 +32,7 @@ public class finalScore : MonoBehaviour
 
     void Update()
     {
-        if (Player == null)
+        if (Player == null && ranOnce == false)
         {
             updateScore();
 		}
@@ -42,45 +44,51 @@ public class finalScore : MonoBehaviour
         
         if (chooseGameMode == "easy" && retrievedScore > PlayerPrefs.GetFloat("ScoreTextEasy", 0))
         {
-            PlayerPrefs.SetFloat("ScoreTextEasy", retrievedScore);
-            highScore.text = retrievedScore.ToString();
-            newHighScore();
+            updateLevel("ScoreTextEasy");
 		}
         else if (chooseGameMode == "medium" && retrievedScore > PlayerPrefs.GetFloat("ScoreTextMedium", 0))
         {
-            PlayerPrefs.SetFloat("ScoreTextMedium", retrievedScore);
-            highScore.text = retrievedScore.ToString();
-            newHighScore();
+            updateLevel("ScoreTextMedium");
 		}
         else if (chooseGameMode == "hard" && retrievedScore > PlayerPrefs.GetFloat("ScoreTextHard", 0))
         {
-            PlayerPrefs.SetFloat("ScoreTextHard", retrievedScore);
-            highScore.text = retrievedScore.ToString();
-            newHighScore();
+            updateLevel("ScoreTextHard");
 		}
 	}
 
-    void newHighScore()
+    void newHighScore(bool outcome)
     {
-        newScore.GetComponent<Text>().enabled = true;
+        newScore.GetComponent<Text>().enabled = outcome;
 	}
 
     public void Reset()
     {
         if (chooseGameMode == "easy")
         {
-            PlayerPrefs.DeleteKey("ScoreTextEasy");
-            highScore.text = "0";
+            Difficulty("ScoreTextEasy");
         }
         else if (chooseGameMode == "medium")
         {
-            PlayerPrefs.DeleteKey("ScoreTextMedium");
-            highScore.text = "0";
+            Difficulty("ScoreTextMedium");
         }
         else if (chooseGameMode == "hard")
         {
-            PlayerPrefs.DeleteKey("ScoreTextHard");
-            highScore.text = "0";
+            Difficulty("ScoreTextHard");
         }
+	}
+
+    public void Difficulty(string level)
+    {
+        PlayerPrefs.DeleteKey(level);
+        newHighScore(false);
+        highScore.text = "0";  
+	}
+
+    public void updateLevel(string level)
+    {
+        PlayerPrefs.SetFloat(level, retrievedScore);
+        ranOnce = true;
+        highScore.text = retrievedScore.ToString();
+        newHighScore(true);  
 	}
 }

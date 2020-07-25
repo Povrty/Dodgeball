@@ -286,7 +286,7 @@ ScriptsOnlyBuild:
     className: TMP_SelectionCaret
   - hash:
       serializedVersion: 2
-      Hash: 20241608978d4a61846d8357270f6b04
+      Hash: 644b2a0bb514f956399666ea3efef639
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: finalScore
