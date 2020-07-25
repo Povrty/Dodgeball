@@ -17,6 +17,8 @@ public class replayGame : MonoBehaviour
     public GameObject Ground;
     public GameObject Player;
     public GameObject Dodgeball;
+    public static string chooseGameMode;
+    public dropDown callingScript;
 
     bool timerActive = true;
 
@@ -65,6 +67,7 @@ public class replayGame : MonoBehaviour
 
     public void mainMenu()
     {
+        dropDown.gameMode = "Difficulty";
         SceneManager.LoadScene("playScreen");
     }
 
