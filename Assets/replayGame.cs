@@ -21,7 +21,7 @@ public class replayGame : MonoBehaviour
     bool timerActive = true;
 
     void Start()
-    {
+    {       
         textBox.text = timeStart.ToString("F2");
         showGame(true);
         showBtn(false, restartBtn);

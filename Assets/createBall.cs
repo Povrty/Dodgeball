@@ -7,9 +7,11 @@ public class createBall : MonoBehaviour
     public GameObject ballPrefab;
     public float respawnTime;
     private Vector2 screenBounds;
+    public dropDown callingScript;
 
     void Start()
     {
+        respawnTime = dropDown.newRespawnTime;
         screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
         StartCoroutine(ballWave());   
     }
